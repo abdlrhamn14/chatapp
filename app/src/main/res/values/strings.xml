@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ChatApplication</string>
+    <string name="forget_password">forget password?</string>
+    <string name="already_have_account">Already have account?</string>
+    <string name="do_not_have_account">do not have account?</string>
+</resources>
