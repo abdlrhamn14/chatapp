@@ -8,5 +8,5 @@ class Route : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_route)
-    }//this is comment hi
+    }//this is comment
 }
