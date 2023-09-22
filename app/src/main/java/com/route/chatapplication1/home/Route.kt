@@ -13,4 +13,5 @@ class Route : AppCompatActivity() {
     fun method(){
         Toast.makeText(this,"hi",Toast.LENGTH_SHORT).show()
     }
+    // comment for try to merge it $Mohamed
 }
