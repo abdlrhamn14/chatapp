@@ -57,7 +57,7 @@ class Register : AppCompatActivity() {
 
     private fun navigateToHome() {
     val intent=Intent(this,Home::class.java)
-      startActivity(intent)
+     startActivity(intent)
         finish()
     }
 
@@ -66,10 +66,14 @@ class Register : AppCompatActivity() {
         viewBinding= ActivityRegisterBinding.inflate(layoutInflater )
         setContentView(viewBinding.root)
         viewModel= ViewModelProvider(this)[RegisterViewModel::class.java]
-        viewBinding.lifecycleOwner=this//to work with live data
+        viewBinding.lifecycleOwner=this//to work with live
+        //because live data aware of life cycle of view so when you make an obj from view model
+        //and view model contains live data which it deals with the life cycle so it should who is the
+        //has this life cycle to work
+        //if you didn't put it it will found life cycle owner is null
         viewBinding.vm=viewModel
         viewBinding.content.alreadyHaveAccount.setOnClickListener {
-            var intent=Intent(this,Login::class.java)
+            val intent=Intent(this,Login::class.java)
             startActivity(intent)
         }
     }

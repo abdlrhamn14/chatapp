@@ -14,11 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ChatApplication"
         tools:targetApi="31">
-        <activity
-            android:name=".home.Route"
-            android:exported="false" />
+
         <activity
             android:name=".home.Home"
+            android:exported="false" />
+        <activity
+            android:name=".addroom.AddRoom"
             android:exported="false" />
         <activity
             android:name=".register.Register"
